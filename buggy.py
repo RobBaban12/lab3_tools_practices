@@ -1,6 +1,9 @@
-def buggy_code():
+
+def fixed_code():
     x = 1
     y = 0
-    z = x/y
+    try:
+        z = x/y
+    except ZeroDivisionError:
+        z = 0
     return z
-
